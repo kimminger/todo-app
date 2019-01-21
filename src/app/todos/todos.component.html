@@ -1,23 +1,17 @@
 <h2>My ToDos</h2>
-<ul class="todos">
-  <li *ngFor="let todo of todos">
-    <a routerLink="/detail/{{todo.id}}">
-      <!-- <span class="badge">{{todo.completed}}</span>{{todo.title}} -->
-      <span class="badge">
-          <input type="checkbox" [(ngModel)]="todo.completed" placeholder="completed">
-      </span>{{todo.title}}
-    </a>
-    <button class="delete" title="delete todo"
-    (click)="delete(todo)">x</button>  
-  </li>
-</ul>
 
 <div>
-  <label>New ToDo:
-    <input #todoTitle />
-  </label>
+  <mat-form-field>
+    <input autofocus="" matInput #todoTitle placeholder="New ToDo">
+  </mat-form-field>
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(todoTitle.value); todoTitle.value=''">
-    Add
-  </button>
+  <button mat-mini-fab color="primary" (click)="add(todoTitle.value); todoTitle.value=''">+</button>
 </div>
+
+<mat-nav-list>
+  <mat-list-item *ngFor="let todo of todos" [class.completed]="todo.completed">
+    <a matLine routerLink="/todo/{{todo.id}}">{{ todo.title }}</a>
+    <span class="delete" title="delete todo" (click)="delete(todo)">x</span>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-nav-list>

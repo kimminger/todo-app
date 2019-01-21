@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Todo } from './todo';
 import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {
@@ -60,10 +60,10 @@ export class TodoService {
     const url = `${this.todosUrl}/${id}`;
 
     return this.http.delete<Todo>(url, httpOptions)
-    .pipe(
-      tap(_ => this.log(`deleted todo id=${id}`)),
-      catchError(this.handleError<Todo>('deleteTodo'))
-    );
+      .pipe(
+        tap(_ => this.log(`deleted todo id=${id}`)),
+        catchError(this.handleError<Todo>('deleteTodo'))
+      );
   }
 
   /**

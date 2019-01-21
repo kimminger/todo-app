@@ -11,6 +11,9 @@ export class TodosComponent implements OnInit {
 
   todos: Todo[];
 
+  displayedColumns: string[] = ['id', 'title'];
+
+
   constructor(private todoService: TodoService) { }
 
   ngOnInit() {

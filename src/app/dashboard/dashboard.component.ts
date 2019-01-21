@@ -11,8 +11,6 @@ export class DashboardComponent implements OnInit {
 
   todos: Todo[];
 
-  selectedTodo: Todo;
-
   constructor(private todoService: TodoService) { }
 
   ngOnInit() {

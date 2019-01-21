@@ -5,9 +5,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TodoDetailComponent } from './todo-detail/todo-detail.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/todos', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: TodoDetailComponent },
+  { path: 'todo/:id', component: TodoDetailComponent },
   { path: 'todos', component: TodosComponent }
 ];
 @NgModule({

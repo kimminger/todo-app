@@ -9,7 +9,7 @@ export class InMemoryDataService {
     const todos: Todo[] = [
       { id: 11, title: 'Do laundry', completed: false },
       { id: 12, title: 'Wash dishes', completed: false },
-      { id: 13, title: 'Buy groceries', completed: false },
+      { id: 13, title: 'Buy groceries', completed: true },
       { id: 14, title: 'Pay bills', completed: false },
       { id: 15, title: 'Do sports', completed: true },
       { id: 16, title: 'Wash the car', completed: false },
