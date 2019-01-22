@@ -10,7 +10,13 @@ Overview of Todos, Create a new Todo, Mark Todo as Done, Delete a Todo
 ## Installation
 - git clone https://github.com/kimminger/todo-app.git
 - cd todo-app/
-- ng serve --open
+- npm install
+- npm start
+
+developed using:<br/>
+https://material.angular.io/guide/getting-started
+
+
 
 ## Design
 designed with Angular Material Components <br/>
