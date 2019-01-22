@@ -1,5 +1,5 @@
 # todo-app
-Angular Demo App: Simple Todo Application
+Angular Demo App: Simple Todo Application <br/>
 Overview of Todos, Create a new Todo, Mark Todo as Done, Delete a Todo
 
 ## Prerequisites
@@ -13,5 +13,5 @@ Overview of Todos, Create a new Todo, Mark Todo as Done, Delete a Todo
 - ng serve --open
 
 ## Design
-designed with Angular Material Components
+designed with Angular Material Components <br/>
 https://material.angular.io/
