@@ -3,33 +3,47 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './todos/todos.component';
 import { TodoDetailComponent } from './todo-detail/todo-detail.component';
-import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MainNavComponent } from './main-nav/main-nav.component';
+// tslint:disable-next-line: max-line-length
+import { MatInputModule, MatButtonModule, MatIconModule, MatSelectModule, MatListModule, MatCheckboxModule, MatGridListModule, MatFormFieldModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MainNavComponent,
     TodosComponent,
     TodoDetailComponent,
     DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule,
-    HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    FlexLayoutModule,
+    FormsModule,
+    LayoutModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatListModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    HttpClientModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
