@@ -1,28 +1,21 @@
-/* DashboardComponent's private CSS styles */
-mat-grid-tile {
-  background: lightgray;
-  width: 300px;
-  height: 300px;
-  line-height: 300px;
+.grid-container {
+  margin: 20px;
 }
 
-mat-grid-tile:hover {
-  background: lightslategray;
+.dashboard-card {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
 
-.ripple {
-  cursor: pointer;
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
   text-align: center;
-
-  width: 300px;
-  height: 300px;
-  line-height: 300px;
-
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-
-  -webkit-user-drag: none;
-  -webkit-tap-highlight-color: transparent;
 }

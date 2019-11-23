@@ -16,8 +16,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MainNavComponent } from './main-nav/main-nav.component';
-// tslint:disable-next-line: max-line-length
-import { MatInputModule, MatButtonModule, MatIconModule, MatSelectModule, MatListModule, MatCheckboxModule, MatGridListModule, MatFormFieldModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatIconModule, MatSelectModule } from '@angular/material';
+import { MatListModule, MatCheckboxModule, MatGridListModule, MatFormFieldModule } from '@angular/material';
+import { MatCardModule, MatMenuModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,8 @@ import { MatInputModule, MatButtonModule, MatIconModule, MatSelectModule, MatLis
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatCardModule,
+    MatMenuModule,
     HttpClientModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests

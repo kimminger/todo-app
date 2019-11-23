@@ -11,7 +11,7 @@
 <mat-nav-list>
   <mat-list-item *ngFor="let todo of todos" [class.completed]="todo.completed">
     <a matLine routerLink="/todo/{{todo.id}}">{{ todo.title }}</a>
-    <span class="delete" title="delete todo" (click)="delete(todo)">x</span>
+    <span class="delete" title="delete todo" (click)="delete(todo)"><mat-icon>close</mat-icon></span>
     <mat-divider></mat-divider>
   </mat-list-item>
 </mat-nav-list>
