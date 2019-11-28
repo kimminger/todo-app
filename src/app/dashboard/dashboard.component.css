@@ -13,9 +13,14 @@
 .more-button {
   position: absolute;
   top: 5px;
-  right: 10px;
+  right: 5px;
 }
 
 .dashboard-card-content {
   text-align: center;
 }
+
+.mat-menu-panel {
+  width: 100%!important; 
+  padding: 0 10px!important;
+} 

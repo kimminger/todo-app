@@ -9,8 +9,9 @@
             <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
               <mat-icon>more_vert</mat-icon>
             </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item><mat-icon>create</mat-icon></button>
+            <!-- <mat-menu #menu="matMenu" xPosition="before"> -->
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item><a href="todo/{{todo.id}}"><mat-icon>create</mat-icon></a></button>
               <button mat-menu-item><mat-icon>delete</mat-icon></button>
             </mat-menu>
           </mat-card-title>
