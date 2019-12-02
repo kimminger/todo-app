@@ -19,6 +19,10 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { MatInputModule, MatButtonModule, MatIconModule, MatSelectModule } from '@angular/material';
 import { MatListModule, MatCheckboxModule, MatGridListModule, MatFormFieldModule } from '@angular/material';
 import { MatCardModule, MatMenuModule } from '@angular/material';
+import { TodosTableComponent } from './todos-table/todos-table.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,8 @@ import { MatCardModule, MatMenuModule } from '@angular/material';
     MainNavComponent,
     TodosComponent,
     TodoDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    TodosTableComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +52,9 @@ import { MatCardModule, MatMenuModule } from '@angular/material';
     MatCardModule,
     MatMenuModule,
     HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
